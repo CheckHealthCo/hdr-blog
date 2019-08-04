@@ -24,15 +24,17 @@ git clone git@github.com:checkhealthco/hdr-blog.git
 Just fill in everything in the `# Site settings` section.
 You'll want to set your site's title, your name, your twitter username, etc.
 
-*Step 6:* Run `rake serve` and then open
+*Step 6:* Install imagemagick. Jekyll picture tag requires that the package is installed locally. Otherwise the build process will fail.
+
+*Step 7:* Run `rake serve` and then open
 [http://localhost:4000/](http://localhost:4000/) to see your site!
 
-*Step 7:* Build the site
+*Step 8:* Build the site
 
 - Clean up the folders: `rake clean`
 - Build the site: `rake build` Note that this will clean before building the site
 
-*Step 8:* Publish your site
+*Step 9:* Publish your site
 [just like any other Jekyll site](https://jekyllrb.com/docs/deployment-methods/).
 Specifically for this project:
 - Fill in `s3_website.yml` with production variables related to AWS S3 bucket
