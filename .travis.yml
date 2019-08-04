@@ -1,8 +1,9 @@
 language: ruby
 rvm:
-- 2.3.3
+- 2.6.3
 before_script:
 - npm install
+- gem install bundler
 cache:
   bundler: true
   directories:
